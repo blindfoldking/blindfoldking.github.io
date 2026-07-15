@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery - Blindfold King</title>
+    <link rel="stylesheet" href="/shared.css">
+    <style>
+        .image-columns-container {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start; /* This forces columns to align at the top instead of stretching to match each other's height */
+        }
+
+        .image-column {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            flex: 1; /* This automatically gives both columns equal 50% width */
+        }
+
+        .image-column img {
+            width: 100%; /* Ensures images fill their container */
+            height: auto; /* Browser automatically calculates the height without cropping */
+            min-height: 15vh; /* Kept from your original code, though you may not need it with width: 100% */
+        }
+
+        @media (max-width: 768px) {
+            .image-columns-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="/" class="logo">
+                Blindfold King
+                <div class="subtitle">Grandmaster <strong>Timur Gareyev</strong></div>
+            </a>
+
+            <button class="hamburger" aria-label="Toggle navigation" id="hamburger-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="/" class="nav-link">Home</a></li>
+                <li><a href="/photo-gallery/" class="nav-link">Photo Gallery</a></li>
+                <li><a href="/invite-timur/" class="nav-link">Invite Timur</a></li>
+                <li><a href="/contact/" class="nav-link">Contact</a></li>
+                <li><a href="/donate/" class="nav-link">Donate</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Photo Gallery</h1>
+
+        <div class="content">
+            <div class="image-columns-container">
+                <div class="image-column">
+                    <img src="./images/gm-timur-gareyev (1).avif" loading="lazy">
+                    <img src="./images/gm-timur-gareyev (2).avif" loading="lazy">
+                    <img src="./images/gm-timur-gareyev (3).avif" loading="lazy">
+                    <img src="./images/gm-timur-gareyev (4).avif" loading="lazy">
+                    <img src="./images/gm-timur-gareyev (5).avif" loading="lazy">
+                    <img src="./images/gm-timur-gareyev (6).avif" loading="lazy">
+                    <img src="./images/gm-timur-gareyev (7).avif" loading="lazy">
+                    <img src="./images/gm-timur-gareyev (8).avif" loading="lazy">
+                    <img src="./images/gm-timur-gareyev (9).avif" loading="lazy">
+                    <img src="./images/gm-timur-gareyev (10).avif" loading="lazy">
+                    <img src="./images/gm-timur-gareyev (11).avif" loading="lazy">
+                    <img src="./images/gm-timur-gareyev (12).avif" loading="lazy">
+                    <img src="./images/gm-timur-gareyev (13).avif" loading="lazy">
+                    <img src="./images/gm-timur-gareyev (14).avif" loading="lazy">
+                    <img src="./images/gm-timur-gareyev (15).avif" loading="lazy">
+                    <img src="./images/gm-timur-gareyev (16).avif" loading="lazy">
+                    <img src="./images/gm-timur-gareyev (17).avif" loading="lazy">
+                    <img src="./images/gm-timur-gareyev (18).avif" loading="lazy">
+                    <img src="./images/gm-timur-gareyev (19).avif" loading="lazy">
+                    <img src="./images/gm-timur-gareyev (20).avif" loading="lazy">
+                    <img src="./images/gm-timur-gareyev (21).avif" loading="lazy">
+                    <img src="./images/gm-timur-gareyev (22).avif" loading="lazy">
+                    <img src="./images/gm-timur-gareyev (23).avif" loading="lazy">
+                    <img src="./images/gm-timur-gareyev (24).avif" loading="lazy">
+                    <img src="./images/gm-timur-gareyev (25).avif" loading="lazy">
+                    <img src="./images/gm-timur-gareyev (26).avif" loading="lazy">
+                    <img src="./images/gm-timur-gareyev (27).avif" loading="lazy">
+                    <img src="./images/gm-timur-gareyev (28).avif" loading="lazy">
+                    <img src="./images/gm-timur-gareyev (29).avif" loading="lazy">
+                </div>
+                <div class="image-column">
+                    <img src="./images/gm-timur-gareyev (30).avif" loading="lazy">
+                    <img src="./images/gm-timur-gareyev (31).avif" loading="lazy">
+                    <img src="./images/gm-timur-gareyev (32).avif" loading="lazy">
+                    <img src="./images/gm-timur-gareyev (33).avif" loading="lazy">
+                    <img src="./images/gm-timur-gareyev (34).avif" loading="lazy">
+                    <img src="./images/gm-timur-gareyev (35).avif" loading="lazy">
+                    <img src="./images/gm-timur-gareyev (36).avif" loading="lazy">
+                    <img src="./images/gm-timur-gareyev (37).avif" loading="lazy">
+                    <img src="./images/gm-timur-gareyev (38).avif" loading="lazy">
+                    <img src="./images/gm-timur-gareyev (39).avif" loading="lazy">
+                    <img src="./images/gm-timur-gareyev (40).avif" loading="lazy">
+                    <img src="./images/gm-timur-gareyev (41).avif" loading="lazy">
+                    <img src="./images/gm-timur-gareyev (42).avif" loading="lazy">
+                    <img src="./images/gm-timur-gareyev (43).avif" loading="lazy">
+                    <img src="./images/gm-timur-gareyev (44).avif" loading="lazy">
+                    <img src="./images/gm-timur-gareyev (45).avif" loading="lazy">
+                    <img src="./images/gm-timur-gareyev (46).avif" loading="lazy">
+                    <img src="./images/gm-timur-gareyev (47).avif" loading="lazy">
+                    <img src="./images/gm-timur-gareyev (48).avif" loading="lazy">
+                    <img src="./images/gm-timur-gareyev (49).avif" loading="lazy">
+                    <img src="./images/gm-timur-gareyev (50).avif" loading="lazy">
+                    <img src="./images/gm-timur-gareyev (51).avif" loading="lazy">
+                    <img src="./images/gm-timur-gareyev (52).avif" loading="lazy">
+                    <img src="./images/gm-timur-gareyev (53).avif" loading="lazy">
+                    <img src="./images/gm-timur-gareyev (54).avif" loading="lazy">
+                    <img src="./images/gm-timur-gareyev (55).avif" loading="lazy">
+                    <img src="./images/gm-timur-gareyev (56).avif" loading="lazy">
+                    <img src="./images/gm-timur-gareyev (57).avif" loading="lazy">
+                    <img src="./images/gm-timur-gareyev (58).avif" loading="lazy">
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="/shared.js"></script>
+</body>
+</html>
