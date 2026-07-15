@@ -6,30 +6,7 @@
     <title>Photo Gallery - Blindfold King</title>
     <link rel="stylesheet" href="/shared.css">
     <style>
-        .image-columns-container {
-            display: flex;
-            gap: 20px;
-            align-items: flex-start; /* This forces columns to align at the top instead of stretching to match each other's height */
-        }
 
-        .image-column {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            flex: 1; /* This automatically gives both columns equal 50% width */
-        }
-
-        .image-column img {
-            width: 100%; /* Ensures images fill their container */
-            height: auto; /* Browser automatically calculates the height without cropping */
-            min-height: 15vh; /* Kept from your original code, though you may not need it with width: 100% */
-        }
-
-        @media (max-width: 768px) {
-            .image-columns-container {
-                flex-direction: column;
-            }
-        }
     </style>
 </head>
 <body>
@@ -49,8 +26,8 @@
 
             <ul class="nav-menu" id="nav-menu">
                 <li><a href="/" class="nav-link">Home</a></li>
+                <li><a href="/world-record/" class="nav-link">World Record</a></li>
                 <li><a href="/photo-gallery/" class="nav-link">Photo Gallery</a></li>
-                <li><a href="/invite-timur/" class="nav-link">Invite Timur</a></li>
                 <li><a href="/contact/" class="nav-link">Contact</a></li>
                 <li><a href="/donate/" class="nav-link">Donate</a></li>
             </ul>
@@ -61,7 +38,15 @@
         <h1>Photo Gallery</h1>
 
         <div class="content">
-            <div class="image-columns-container">
+
+            <p>
+                Explore a collection of photos featuring Grandmaster Timur Gareyev in various chess events and exhibitions.
+            </p>
+            <p>
+                (Photos of the world record blindfold chess event are available in the <a href="/world-record/">World Record</a> section.)</p>
+            </p>
+
+            <div class="image-columns-container" style="margin-top: 20px">
                 <div class="image-column">
                     <img src="./images/gm-timur-gareyev (1).avif" loading="lazy">
                     <img src="./images/gm-timur-gareyev (2).avif" loading="lazy">
@@ -92,6 +77,12 @@
                     <img src="./images/gm-timur-gareyev (27).avif" loading="lazy">
                     <img src="./images/gm-timur-gareyev (28).avif" loading="lazy">
                     <img src="./images/gm-timur-gareyev (29).avif" loading="lazy">
+                    <img src="./images/timur-gareyev-chess (1).avif" loading="lazy">
+                    <img src="./images/timur-gareyev-chess (2).avif" loading="lazy">
+                    <img src="./images/timur-gareyev-chess (3).avif" loading="lazy">
+                    <img src="./images/timur-gareyev-chess (4).avif" loading="lazy">
+                    <img src="./images/timur-gareyev-chess (5).avif" loading="lazy">
+
                 </div>
                 <div class="image-column">
                     <img src="./images/gm-timur-gareyev (30).avif" loading="lazy">
@@ -123,6 +114,10 @@
                     <img src="./images/gm-timur-gareyev (56).avif" loading="lazy">
                     <img src="./images/gm-timur-gareyev (57).avif" loading="lazy">
                     <img src="./images/gm-timur-gareyev (58).avif" loading="lazy">
+                    <img src="./images/timur-gareyev-chess (6).avif" loading="lazy">
+                    <img src="./images/timur-gareyev-chess (7).avif" loading="lazy">
+                    <img src="./images/timur-gareyev-chess (8).avif" loading="lazy">
+                    <img src="./images/timur-gareyev-chess (9).avif" loading="lazy">
                 </div>
             </div>
 

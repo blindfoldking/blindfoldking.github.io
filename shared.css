@@ -161,7 +161,7 @@ blockquote {
 }
 
 /* Responsive Breakpoint (Tablet/Mobile) for navigation menu - start */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .navbar {
         padding: 20px;
     }
@@ -212,15 +212,44 @@ blockquote {
 .button {
     display: inline-block;
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 22px;
     color: white;
-    background-color: #007BFF;
+    background-color: blue;
     border: none;
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .button:hover {
     background-color: #0056b3;
 }
+
+/* Image 2-Columns Styles - start */
+.image-columns-container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start; /* This forces columns to align at the top instead of stretching to match each other's height */
+}
+
+.image-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1; /* This automatically gives both columns equal 50% width */
+}
+
+.image-column img {
+    width: 100%; /* Ensures images fill their container */
+    height: auto; /* Browser automatically calculates the height without cropping */
+    min-height: 15vh; /* Kept from your original code, though you may not need it with width: 100% */
+}
+
+@media (max-width: 768px) {
+    .image-columns-container {
+        flex-direction: column;
+    }
+}
+/* Image 2-Columns Styles - end */
