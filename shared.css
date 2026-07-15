@@ -161,7 +161,7 @@ blockquote {
 }
 
 /* Responsive Breakpoint (Tablet/Mobile) for navigation menu - start */
-@media (max-width: 800px) {
+@media (max-width: 850px) {
     .navbar {
         padding: 20px;
     }
